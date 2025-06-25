@@ -1,177 +1,155 @@
- * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #fffbed;
 }
 
+/* TIPOGRAFIA */
 
-h1 {
+h1, h2, p {
     font-family: sans-serif;
     color: #343738;
+    margin: 20px;
+}
+
+h1 {
     font-size: 34px;
     margin-top: 60px;
 }
 
 h2 {
-    font-family: sans-serif;
-    color: #2847f5 ;
+    color: #2847f5;
     font-size: 25px;
-    margin-left: 100px;
-    margin-top: 30px;
-    
-}
-
-a {
-    color: #003bdf ;
 }
 
 p {
-    font-family: sans-serif;
     color: #5c5c5c;
     font-size: 26px;
-    margin-left: 50px;
-    margin-top: 60px;
 }
+
+a {
+    color: #003bdf;
+}
+
+/* ESTRUTURA */
 
 header {
     display: flex;
-    width: 1910px;
-    height: 204px;
-    justify-content: space-between;
-    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
 }
 
 .logo {
-    position: absolute;
-    top: 35px;
-    left: 200px;
-    width: auto;
-    height: 100px;
+    width: 100px;
+    height: auto;
     border-radius: 20px;
 }
 
 .hr1 {
-    position: absolute;
-    top: 136px;
-    left: 72px;
-    width: 1750px;
+    width: 90%;
     height: 1px;
-    background-color: rgb(0, 0, 0);
-
+    background-color: black;
+    margin: 20px auto;
 }
 
 .hr2 {
     width: 290px;
-    margin-top: 60px;
-    margin-left: 100px;
-    background-color: rgb(0, 0, 0);
+    margin: 60px auto;
+    background-color: black;
+    height: 1px;
 }
 
-.tudo h1{
+.tudo h1 {
     color: #de7736;
     font-family: 'Chewy', cursive;
 }
 
-.tudo p{
+.tudo p {
     font-family: 'Chewy', cursive;
     color: #70310a;
 }
 
-.tudo img{
-    width: 400px;
+.tudo img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
 }
 
 .sdi1 {
-    height: 650px;
+    height: auto;
+    width: 100%;
 }
 
 .dança {
-    margin-left:0px;
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .img1 {
-    position: absolute;
-    left: 72px;
-    width: 1750px;
-    height: 630px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
 }
 
 .origem {
-    width: 900px;
-    margin-top: 650px;
-    margin-left: 10px;
-    float: left;
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
     color: gray;
     font-size: 30px;
-    justify-content: center;
-    align-items: center;
 }
 
 .sumario {
-    width: 500px;
-    height: 20px;
-    margin-top: 650px;
-    margin-left: 60px;
+    width: 90%;
+    max-width: 500px;
     padding: 40px;
+    margin: 40px auto;
     box-sizing: border-box;
     position: sticky;
     top: 0;
+    background: #fffbed;
+    z-index: 2;
 }
-
 
 .st {
     margin-top: 20px;
-    margin-left: 100px;
+    text-align: center;
 }
-
 
 .sumdiv {
     margin-top: 50px;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
+/* ÂNCORAS */
 
-#t1:target {
-    padding-top: 40px;
-
-}
-
-#t2:target {
-    padding-top: 40px;
-}
-
-#t3:target {
-    padding-top: 40px;
-}
-
-#t4:target {
-    padding-top: 40px;
-}
-
-#t5:target {
-    padding-top: 40px;
-}
-
-#t6:target {
-    padding-top: 40px;
-}
-
-#t7:target {
-    padding-top: 40px;
-}
-
+#t1:target,
+#t2:target,
+#t3:target,
+#t4:target,
+#t5:target,
+#t6:target,
+#t7:target,
 #t8:target {
     padding-top: 40px;
 }
+
+/* IMAGENS */
 
 img {
     max-width: 100%;
@@ -179,125 +157,63 @@ img {
     display: block;
 }
 
-    @media screen and (max-width: 1366px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
+/* RESPONSIVIDADE MOBILE */
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 22px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 18px;
+        margin: 10px 20px;
+        text-align: center;
     }
 
     .logo {
-        position: static;
-        margin-top: 20px;   
-    }
-
-    .hr1 {
-        position: static;
-        width: 90%;
-        margin: 10px auto;
-    }
-
-    .tudo {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .sumario {
-        position: static;
-        width: 90%;
-        height: auto;
-        margin: 20px auto;
-    }
-
-    .origem {
-        width: 90%;
-        margin: 20px auto;
-    }
-
-    .dança {
-        margin-left: 0;
-        width: 100%;
-    }
-    }
-
-    @media screen and (max-width: 460px) {
-    
-    .tudo img{
-    width: 400px;
-    border-radius: 10px;
-}
-
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo {
-        width: 150px;
-        height: auto;
-        margin: 20px auto;
-    }
-
-    ul {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
+        width: 120px;
+        margin: 0 auto;
     }
 
     .sumario {
         display: none;
     }
 
+    .dança,
+    .origem,
+    .roupa,
+    .brincadeiras,
+    .elemento,
+    .quem,
+    .sao {
+        width: 90%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
     .img1 {
-        position: static;
-        width: 100%;
-        height: auto;
-        margin-top: 20px;
-    }
-
-    .tudo {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .origem, .dança, .roupa, .brincadeiras, .elemento, .quem, .sao {
-        width: 100%;
         margin: 20px auto;
     }
 
-    h1, h2, p {
-        margin-left: 20px;
-        margin-right: 20px;
-        font-size: 22px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 18px;
-    }
-    }
-    @media screen and (max-width: 460px) {
     .tudo {
-        display: block;
-        margin: 0;
-        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
+}
 
-    .origem {
-        margin-top: 20px;
-        width: 100%;
-        padding: 0 15px;
+@media screen and (max-width: 768px) {
+    body {
+        padding-right: 45px;
     }
+}
 
-    .sdi1 {
-        height: auto;
-        margin: 0;
-    }
-
-    .img1 {
-        margin-top: 0;
-    }
-    }
