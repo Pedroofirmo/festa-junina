@@ -11,9 +11,9 @@ const carrosseis = [
         id: 'atividades',
         itens: [
             { nome: "Quadrilha", imagem: "src/img/img-04.jpeg" },
-            { nome: "Pescaria", imagem: "src/img/img-05.jpg" },
-            { nome: "Correio Elegante", imagem: "src/img/img-06.jpg" },
-            { nome: "Dança da Fita", imagem: "src/img/img-07.jpg" }
+            { nome: "Serresta", imagem: "src/img/img-05.jpg" },
+            { nome: "Reizado", imagem: "src/img/img-06.jpg" },
+            { nome: "fogueira", imagem: "src/img/img-07.jpg" }
         ]
     },
     {
@@ -22,7 +22,7 @@ const carrosseis = [
             { nome: "Pamonha", imagem: "src/img/pamonha.webp" },
             { nome: "Canjica", imagem: "src/img/canjica.jpg" },
             { nome: "Milho Cozido", imagem: "src/img/milho.jpg" },
-            { nome: "Cuscuz", imagem: "src/img/maça.webp" }
+            { nome: "Maçã do amor", imagem: "src/img/maça.webp" }
         ]
     }
 ];
