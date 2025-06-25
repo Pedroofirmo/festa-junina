@@ -79,7 +79,7 @@ header {
     overflow: hidden;
     text-align: center;
     padding: 20px;
-    margin-left: 70px;
+    margin-left: 85px;
 }
 
 .carrossel img {
@@ -131,7 +131,7 @@ header {
     align-items: center;
     text-align: center;
     padding-bottom: 50px;
-    margin-left: -35px;
+    margin-left: 20px;
 }
 
 .title-card h1{
@@ -250,7 +250,7 @@ footer p{
 }
 
 .card-vazio{
-    width: 470px;
+    width: 473px;
     height: 210px;
     background-color: #c800c8;
     margin-top: -10px;
@@ -277,19 +277,19 @@ footer p{
 }
 
 .clone-img{
-    width: 470px;
+    width: 473px;
     height: 270px;
     margin-top: -30px;
 }
 
 .img-vazio{
-    width: 470px;
+    width: 473px;
     height: 270px;
     margin-top: 150px;
 }
 
 .clone-img{
-    width: 470px;
+    width: 473px;
     height: 270px;
 }
 
