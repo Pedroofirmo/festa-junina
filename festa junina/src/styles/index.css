@@ -62,7 +62,7 @@ header {
     width: 100vw;
     height: 350px;
     margin-top: 90px;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 .card-img img{
@@ -307,4 +307,3 @@ footer p{
 .icons-social{
     margin-left: 70px;
 }
-
