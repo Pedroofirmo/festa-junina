@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chewy', cursive;
+}
+
+body {
+    background-color: #fffbed;
+}
+
+header {
+    width: 100vw;
+    height: 100px;
+    position: relative;
+}
+
+.icon-menu{
+    width: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.img-logo{
+    width: 60px;
+    margin-left: 300px;
+    margin-top: -200px;
+}
+
+.img-logo-div{
+    margin-top: -10px;
+}
+
+.junina-timer {
+    font-family: 'Chewy', cursive;
+    font-size: 0.9rem;
+    background-color: #fff3cd;
+    color: #d35400;
+    padding: 6px 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 30px;
+    width: 360px;
+    height: 50px;
+    justify-content: center;
+    margin-left: 13px;
+}
+
+.junina-timer span {
+    color: #de7736;
+    font-weight: bold;
+}
+
+.card-img{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 350px;
+    margin-top: 90px;
+}
+
+.card-img img{
+    width: 370px;
+    height: 300px;
+}
+
+.carrossel {
+    width: 90%;
+    max-width: 320px;
+    background: #fff3cd;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    margin-left: 35px;
+}
+
+.carrossel img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.nome {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #d35400;
+    font-family: 'Chewy', cursive;
+}
+
+.indicadores {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 8px;
+}
+
+.bolinha {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bolinha.ativa {
+    background-color: #de7736;
+}
+
+.carrossel img {
+    transition: opacity 0.5s ease;
+}
+
+.nome {
+    transition: opacity 0.5s ease;
+}
+
+.title-card{
+    font-size: 1.0rem;
+    color: #de7736;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.title-card h1{
+    font-family: 'Chewy', cursive;
+}
+
+.titulo{
+    font-size: 1.3rem;
+    color: #d35400;
+    font-family: 'Chewy', cursive;
+    font-weight: bold;
+}
+
+footer{
+    width: 100%vw;
+    height: 100px;
+    background-color: #fff3cd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 100px;
+    position: relative;
+}
+
+#card-02{
+    margin-top: 100px;
+}
+
+#card-03{
+    margin-top: 100px;
+}
+
+@keyframes aparecerDaEsquerda {
+    0% {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.carrossel {
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.carrossel.ativo {
+    animation: aparecerDaEsquerda 0.8s ease forwards;
+}
+
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #fff3cd;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    padding: 20px;
+    transition: left 0.4s ease;
+    z-index: 1000;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.menu-lateral li {
+    margin: 20px 0;
+}
+
+.menu-lateral a {
+    text-decoration: none;
+    color: #d35400;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Chewy', cursive;
+    transition: color 0.3s;
+}
+
+.menu-lateral a:hover {
+    color: #de7736;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease;
+    z-index: 999;
+}
+
+.menu-lateral.ativo {
+    left: 0;
+}
+
+.overlay.ativo {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-vazio{
+    width: 100vw;
+    height: 210px;
+    background-color: #c800c8;
+    margin-top: -10px;
+}
+
+.card-vazio h2{
+    text-align: center;
+    padding-top: 30px;
+    color: #fff;
+}
+
+.card-vazio p{
+    text-align: center;
+    padding-top: 10px;
+    color: #fff;
+}
+
+.card-vazio a{
+    margin-left: 130px;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.clone-img{
+    width: 100vw;
+    height: 270px;
+    margin-top: -30px;
+}
+
+.img-vazio{
+    width: 100vw;
+    height: 270px;
+    margin-top: 150px;
+}
+
+.clone-img{
+    width: 100vw;
+    height: 270px;
+}
+
+.social{
+    width: 30px;
+}
+
+.title-social{
+    font-size: 12px;
+    margin-top: 70px;
+    margin-left: -180px;
+    color: #de7736;
+}
+
+.icons-social{
+    margin-left: 70px;
+}
